@@ -1,0 +1,208 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alert: New Benefit</title>
+    <style>
+      body {
+        color: #202020;
+        background-color: #fff;
+        font-family: "Poppins", sans-serif;
+        margin: 0 auto;
+        width: 620px;
+      }
+      p {
+        line-height: 184.6%; /* 29.536px */
+        margin: 0;
+      }
+      .top {
+        height: 343px;
+        background: radial-gradient(
+          257.12% 69.01% at 34.18% 72.59%,
+          #de4e45 0%,
+          rgba(222, 97, 69, 0.85) 41.61%,
+          rgba(222, 97, 69, 0.38) 100%
+        );
+        clip-path: ellipse(53% 50% at 50% 0%);
+        z-index: -1;
+      }
+      .toop {
+        margin: 0 auto;
+        z-index: -1;
+      }
+      .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        border: 10px solid #d5d5f5;
+        background: #f8f1de;
+        margin: 0 auto;
+        margin-top: -360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+      }
+      .full {
+        padding: 45px 30px;
+        padding-top: 0;
+      }
+      .heading {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 0;
+      }
+      .head {
+        margin-bottom: 20px;
+      }
+      .link {
+        color: #454ade;
+        text-decoration: none;
+      }
+      footer {
+        background-color: #454ade;
+        color: white;
+        padding: 12px 45px;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        color: #454ade;
+        font-weight: 500;
+      }
+      span.title {
+        font-style: 16px;
+        font-weight: 600;
+      }
+      footer .footer-logo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      footer .footer-logo p {
+        color: white;
+      }
+
+      .checkout__wrapper{
+        padding: 20px 0;
+      }
+
+      .checkout__button{
+        padding: 10px 20px;
+        background-color: #454ade;
+        color: white !important;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+            <div class="head"><img src="https://d1sb16rjggut15.cloudfront.net/email-templates/terminateContract.svg" alt=""></div>
+
+    <section class="full">
+      <h1 class="heading">Notification: New Benefit</h1>
+      <p>
+        Hey there,            
+      </p>
+
+      <p style="margin: 20px 0">
+    </p>
+
+      <p>
+      Trust this message finds you well. 
+      We wanted to nofify you promptly that a new benefit has been created in ${org_name} Org.</p>
+     
+    
+
+      <p>Click here to view more details.</p>
+      <p style="margin-top: 20px;">
+      <a 
+      href="${FRONTEND_BASE_URL}/admin/dashboard/invoice/invoice_list/${benefit_id}"
+      class="checkout__button">
+      Confirm Payment
+      </a>
+      </p>
+    </div> 
+
+      
+
+     
+      <p style="margin: 40px 0">
+        Best regards,<br />
+        Team Bizpend.
+      </p>
+      <p>
+        If you'd
+        rather not receive this kind of email, you can
+        <a href="#" style="color: #deb145; text-decoration: none">unsubscribe</a
+        ><br />
+        © Bizpend. 2023, All Rights Reserved
+      </p>
+    </section>
+    <footer>
+      <div class="footer-logo" style="display: flex; gap: 10px; align-items: center">
+        <img
+          src="https://d1sb16rjggut15.cloudfront.net/logos/white-logo-icon.png"
+          alt=""
+          style="height: 32px"
+        />
+        <p>Bizpend</p>
+      </div>
+      <div style="display: flex; gap: 20px; align-items: center">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
+        <svg
+          xmlns="https://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_6001_43282)">
+            <path
+              d="M24.03 5.01001C23.1431 5.40376 22.1925 5.66813 21.1931 5.78813C22.2131 5.17688 22.9969 4.20938 23.3644 3.05813C22.4119 3.6225 21.3525 4.03313 20.2294 4.25438C19.3294 3.29438 18.0469 2.69626 16.6275 2.69626C13.9013 2.69626 11.6906 4.90501 11.6906 7.63126C11.6906 8.01751 11.7356 8.39438 11.82 8.75626C7.7175 8.55001 4.08188 6.58501 1.64625 3.59814C1.22063 4.32939 0.978755 5.17688 0.978755 6.08063C0.978755 7.79251 1.84875 9.30376 3.17438 10.1906C2.36438 10.1644 1.60313 9.94126 0.937504 9.57188C0.937504 9.59251 0.937504 9.61314 0.937504 9.63376C0.937504 12.0263 2.64001 14.0194 4.89563 14.475C4.48313 14.5875 4.04625 14.6475 3.59625 14.6475C3.2775 14.6475 2.96813 14.6175 2.66625 14.5575C3.29625 16.5169 5.11875 17.9475 7.27688 17.9869C5.58938 19.3106 3.46125 20.0981 1.1475 20.0981C0.748129 20.0981 0.356252 20.0756 -0.0281219 20.0288C2.15438 21.4313 4.74938 22.2469 7.5375 22.2469C16.6163 22.2469 21.5813 14.7263 21.5813 8.20501C21.5813 7.99126 21.5756 7.77564 21.5681 7.56564C22.5319 6.87001 23.3681 6.00001 24.03 5.01001Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_6001_43282">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        </a>
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+        >
+          <path
+            d="M20.6282 20.6253H17.0416V15.0083C17.0416 13.6689 17.0177 11.9446 15.176 11.9446C13.308 11.9446 13.0221 13.404 13.0221 14.9108V20.6247H9.43546V9.07413H12.8787V10.6527H12.9268C13.2714 10.0635 13.7694 9.57881 14.3677 9.25024C14.966 8.92166 15.6421 8.76151 16.3241 8.78683C19.9594 8.78683 20.6297 11.178 20.6297 14.2887L20.6282 20.6253ZM5.38851 7.49525C4.97681 7.49532 4.57427 7.37332 4.23207 7.14468C3.8897 6.91603 3.62291 6.591 3.46529 6.21069C3.30766 5.83041 3.26631 5.41191 3.34665 5.00814C3.42681 4.60437 3.62495 4.23346 3.91596 3.94232C4.20715 3.65119 4.57783 3.45288 4.98173 3.37249C5.38545 3.2921 5.80393 3.33325 6.18427 3.49073C6.56461 3.64819 6.8897 3.91492 7.11851 4.25715C7.34732 4.59941 7.46935 5.0018 7.46952 5.41346C7.46952 5.6868 7.4158 5.95746 7.31122 6.21002C7.20664 6.46256 7.05342 6.69203 6.8602 6.88536C6.66681 7.07866 6.43749 7.23202 6.18495 7.33666C5.9324 7.4413 5.66173 7.4952 5.38851 7.49525ZM7.18173 20.6253H3.59139V9.07413H7.18173V20.6253ZM22.4163 0.0016492H1.78902C1.32088 -0.00363422 0.869692 0.177171 0.534777 0.504336C0.199861 0.8315 0.00850929 1.27825 0.00274658 1.74642V22.4593C0.0083398 22.9276 0.199525 23.3747 0.53444 23.7022C0.869356 24.0298 1.32071 24.2108 1.78902 24.2059H22.4163C22.8856 24.2119 23.3382 24.0312 23.6744 23.7037C24.0107 23.3761 24.2031 22.9286 24.2097 22.4593V1.74493C24.2029 1.27583 24.0104 0.828569 23.6741 0.501412C23.3378 0.174256 22.8855 -0.0060328 22.4163 0.000154135"
+            fill="white"
+          />
+        </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
