@@ -136,7 +136,7 @@ export const ChartDisplayBar = ({ article }) => {
 
   const options = {
     scales: {
-      x: { title: { text: "Tags", display: true } },
+      x: { title: { text: "", display: true } },
       y: { title: { text: "Quantity", disalay: true } },
     },
     // elements: {
