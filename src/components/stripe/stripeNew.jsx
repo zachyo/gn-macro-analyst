@@ -53,7 +53,7 @@ const CheckoutForm = ({ amount, email }) => {
     const res = await fetch("https://api.stripe.com/v1/payment_intents", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.REACT_APP_STRIPE_KEY}`,
+        Authorization: `Bearer ${import.meta.env.VITE_APP_STRIPE_KEY}`,
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: new URLSearchParams({

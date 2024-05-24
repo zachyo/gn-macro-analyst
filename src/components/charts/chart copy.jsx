@@ -189,9 +189,9 @@ export const ChartDisplayBar = ({ article }) => {
 
           <Line options={options} data={{ ...parsedData.chartDataLine }} />
 
-          {parsedData.title?.split(" ")?.includes("line")
+          {/* {parsedData.title?.split(" ")?.includes("line")
             ? "Bar graph"
-            : parsedData.title}
+            : parsedData.title} */}
           {/* <BarChart parsedData={parsedData} /> */}
 
           <Bar options={options} data={{ ...parsedData.chartData }} />

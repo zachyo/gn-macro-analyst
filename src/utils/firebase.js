@@ -10,7 +10,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   // apiKey: "AIzaSyADQ5EGqy2S43fqeZn4Ulq6u56udSa0jhI",
-  apiKey : process.env.REACT_APP_FIREBASE_API_KEY,
+  apiKey : import.meta.env.VITE_APP_FIREBASE_API_KEY,
   authDomain: "gnmacroanalyst-gnappllc.firebaseapp.com",
   projectId: "gnmacroanalyst-gnappllc",
   storageBucket: "gnmacroanalyst-gnappllc.appspot.com",
