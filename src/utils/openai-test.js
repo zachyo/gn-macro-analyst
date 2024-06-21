@@ -21,7 +21,7 @@ export async function fetchChartData(article) {
     article.content
   }". Result should be text. Just return json. Do not explain. Do not make the json a variable`;
 
-  let prompt3 = `create 3 different types graphs and provide short paragraph insight about economy areas such as environmental economics, supply and demand, health economics, labor economics, macroeconomics, international economics and other economics areas of this news article - "${article.content}". Return answer in json with keys "graph" and "analysis". "analysis" contains the short paragraph generated. "graph" is an array of objects in which each object has a title relating to the short paragraph insight, data : an array of numbers and tags : array of single word tags we're plotting the data against which contains corresponsing data for the types of graphs suggested. the data array and the tags array must always be of the same length and the length must not be less than 3`;
+  let prompt3 = `create 3 different types graphs and provide short paragraph insight about economy areas such as environmental economics, supply and demand, health economics, labor economics, macroeconomics, international economics and other economics areas of this news article - "${article.content}". Return answer in json with keys "graph" and "analysis". "analysis" contains the short paragraph generated. "graph" is an array of objects in which each object has a title relating to the short paragraph insight, data : an array of numbers and tags : array of single word tags we're plotting the data against which contains corresponsing data for the types of graphs suggested, labels as an object containing keys "x_axis" and "y_axis" for the data and tags that will be plotted against each other. the data array and the tags array must always be of the same length and the length must not be less than 3`;
 
   const completion = await openai.chat.completions.create({
     messages: [{ role: "user", content: prompt3 }],
@@ -29,6 +29,7 @@ export async function fetchChartData(article) {
   });
 
   const aiResponse = completion.choices[0].message.content;
+  // console.log(aiResponse)
   return {
     aiResponse,
   };

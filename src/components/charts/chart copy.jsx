@@ -117,6 +117,8 @@ export const ChartDisplayBar = ({ article }) => {
       const analyzed = parsedInfo.analysis;
       const title = parsedInfo.graph[0].title ?? parsedInfo.graphs[0].title;
       const titleLine = parsedInfo.graph[1].title ?? parsedInfo.graphs[1].title;
+      const xAxisLabel = parsedInfo.graph[0].labels.x_axis ?? "X-axis";
+      const yAxisLabel = parsedInfo.graph[0].labels.y_axis ?? "Y-axis";
       return {
         insight,
         analyzed,
@@ -124,20 +126,34 @@ export const ChartDisplayBar = ({ article }) => {
         chartData,
         chartDataLine,
         titleLine,
+        xAxisLabel,
+        yAxisLabel,
       };
     } catch (e) {
       console.log(e)
       return {
         chartData: defaultChartData,
         chartDataLine: defaultChartData,
+        // xAxisLabel: "X-axis",
+        // yAxisLabel: "Y-axis",
       };
     }
   }, [content]);
-
+// JSON.parse(content?.gptData)?.graph?.[0]["x-axis"];
   const options = {
     scales: {
-      x: { title: { text: "", display: true } },
-      y: { title: { text: "Quantity", disalay: true } },
+      x: {
+        title: {
+          text: parsedData.xAxisLabel,
+          display: true,
+        },
+      },
+      y: {
+        title: {
+          text: parsedData.yAxisLabel,
+          display: true,
+        },
+      },
     },
     // elements: {
     //   line: {
