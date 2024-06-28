@@ -211,7 +211,7 @@ export const ChartDisplayBar = ({ article }) => {
           {/* <BarChart parsedData={parsedData} /> */}
 
           <Bar options={options} data={{ ...parsedData.chartData }} />
-          <p className="text-left text-sm">{parsedData.analyzed}</p>
+          {/* <p className="text-left text-sm">{parsedData.analyzed}</p> */}
         </>
       )}
     </div>
